@@ -80,6 +80,10 @@
 % Para incluir listings de código
 \renewcommand{\lstlistingname}{\bfseries C\'odigo}
 
+% Para captions de texto sans-serif.
+\newenvironment{mifuentephv}{\fontfamily{phv}\selectfont}{\par}
+\DeclareTextFontCommand{\textmyfont}{\mifuentephv}
+
 % Para agregar la bibliografía al indice
 \usepackage[nottoc,numbib]{tocbibind}
 
