@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,oneside]{book}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish, es-tabla]{babel}
 \usepackage[toc,page]{appendix}
 \usepackage{longtable}
 \usepackage{amsmath}
@@ -26,6 +26,12 @@
 \definecolor{Celeste}{rgb}{0,0.75,0.75}
 \definecolor{Azul}{rgb}{0,0,1}
 \definecolor{Violeta}{rgb}{0.5,0,0.75}
+\definecolor{ultramarine}{rgb}{0, 0.125, 0.376}
+\definecolor{ort}{rgb}{0, 0.313, 0.313}
+\definecolor{ortrojo}{rgb}{0.4, 0.0627, 0.125}
+
+%\usepackage{tikz}
+%\usetikzlibrary{babel,automata,positioning}
 
 %%%%%%%%%%%%% Macros para formato 302 %%%%%%%%%%%%%%%%%%%
 
@@ -45,9 +51,10 @@
  pdfproducer={texmaker}
  }
 \hypersetup{
-	colorlinks=true,
-	urlcolor=blue,
-	linkcolor=blue
+ colorlinks=true,
+ urlcolor=blue,
+ linkcolor=black,
+ citecolor=black
 }
 % Numeración y formato de páginas
 \usepackage{fancyhdr}
@@ -69,10 +76,6 @@
 
 %% Para incluir imagenes
 \usepackage{graphicx}
-
-
-% Para incluir tablas en español
-\renewcommand\tablename{\bfseries Tabla}
 
 % Para incluir listings de código
 \renewcommand{\lstlistingname}{\bfseries C\'odigo}
